@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Complex	fft.h	/^typedef struct Complex_ Complex;$/;"	t	typeref:struct:Complex_
+Complex_	fft.h	/^struct Complex_{$/;"	s
+Complex_::imag	fft.h	/^     double imag; $/;"	m	struct:Complex_	access:public
+Complex_::real	fft.h	/^     double real;$/;"	m	struct:Complex_	access:public
+Complex_Add	fft.c	/^static void Complex_Add(Complex* src1,Complex* src2,Complex* dst)$/;"	f	file:	signature:(Complex* src1,Complex* src2,Complex* dst)
+Complex_Sub	fft.c	/^static void Complex_Sub(Complex* src1,Complex* src2,Complex* dst)$/;"	f	file:	signature:(Complex* src1,Complex* src2,Complex* dst)
+MAX_SIZE	fft.h	8;"	d
+PI	fft.h	5;"	d
+_FFT_H_	fft.h	2;"	d
+imag	fft.h	/^     double imag; $/;"	m	struct:Complex_	access:public
+main	fft.c	/^void main()$/;"	f
+real	fft.h	/^     double real;$/;"	m	struct:Complex_	access:public
