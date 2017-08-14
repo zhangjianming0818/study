@@ -1,1 +1,1 @@
-#git for study codec and relate file
+#git for study code and relate file
