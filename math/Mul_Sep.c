@@ -31,9 +31,11 @@ int32_t Multiply_Separate(int32_t src1,int32_t src2,int32_t Exp_Bit)
    src1 = labs(src1);                               //get absolute value 
    src2 = labs(src2);
 
+   //printf("src %08x\n",src1);
    int32_t HightSrc1 = src1 >> LOW_BIT;            //get Hight bit 
    int32_t LowSrc1   = src1&LOW_BIT_MASK;          // get low bit
-
+   //printf("Hight %08x\n",HightSrc1);
+   //printf("Low %08x\n",LowSrc1);
    int32_t HightSrc2 = src2 >> LOW_BIT;
    int32_t LowSrc2   = src2&LOW_BIT_MASK;
    
@@ -60,10 +62,15 @@ int32_t Multiply_Separate(int32_t src1,int32_t src2,int32_t Exp_Bit)
 
 void main(void)
 {
-    int32_t ret;
-
-    ret = Multiply_Separate(65536,65536,2);
-    printf("self %d \n",ret);
+    int32_t i,ret;
+    struct timeval tv1,tv2;
+    //gettimeofday(&tv1,NULL);
+    for(i=1048576;i<33554432;i++){
+       ret = Multiply_Separate(-i,i,20);
+       printf("%d \n",ret);
+    }
+    //gettimeofday(&tv2,NULL);
+    //printf("%d :%d \n",tv2.tv_sec-tv1.tv_sec,tv2.tv_usec-tv1.tv_usec);
 
 
 }
