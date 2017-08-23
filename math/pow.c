@@ -14,7 +14,6 @@
 
 float pow10f(float value)
 {
-
     return expf(2.302585092994*value);
 }
 
